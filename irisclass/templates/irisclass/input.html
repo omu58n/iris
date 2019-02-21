@@ -1,0 +1,9 @@
+{% extends 'irisclass/base.html' %}
+
+{% block content %}
+    <form method="POST">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Judge</button>
+    </form>
+    <img src='/irisclass/figure' width=300 height=300>
+{% endblock %}
